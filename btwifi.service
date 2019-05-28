@@ -1,0 +1,11 @@
+[Unit]
+Description=BT Wifi Login Service
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=20
+ExecStart=/usr/bin/btwifi.sh
+
+[Install]
+WantedBy=multi-user.target
