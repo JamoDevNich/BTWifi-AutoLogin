@@ -1,11 +1,11 @@
 [Unit]
-Description=BT Wifi Login Service
+Description=BT Wifi Client Service
 After=network.target
 
 [Service]
 Restart=always
 RestartSec=20
-ExecStart=/usr/bin/btwifi.sh
+ExecStart=/usr/bin/BTWifiClient.py
 
 [Install]
 WantedBy=multi-user.target
